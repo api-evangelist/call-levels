@@ -1,7 +1,28 @@
 aid: call-levels
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/call-levels.png
 name: Call Levels
-description: Call Levels is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Call Levels was a Singapore-based financial technology company, founded in 2014 by Cynthia Siantar
+  and Daniel Chia, that built a real-time financial markets monitoring and price-alert service. Its
+  consumer mobile app (iOS and Android) let retail investors set price "call levels" and receive
+  real-time alerts across multiple asset classes including forex, commodities, indices and equities,
+  serving 500,000+ investors globally. On the institutional side it offered an open API and a
+  chatbot/portfolio-management framework marketed to banks and financial institutions for embedding
+  market monitoring into legacy systems. The company was backed by 500 Startups (500 Global) via a
+  pre-Series A round. As of this profile the primary domain (call-levels.com) resolves to a parked
+  registrar lander with no live developer portal, API documentation, or discoverable API surface, so
+  the company appears dormant or defunct and no live API artifacts could be harvested.
 url: https://raw.githubusercontent.com/api-evangelist/call-levels/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +30,31 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: dormant
+x-status-note: >-
+  Enrichment 2026-07-18 found call-levels.com and www.call-levels.com serving a parked "/lander"
+  redirect for every path (including bogus paths and all /.well-known/* endpoints), and no
+  api./docs./developer. subdomains resolving. No live API surface, OpenAPI, or genuine well-known
+  documents exist. The 200 responses from /.well-known/* are soft-404s (the parking catch-all), not
+  real discovery documents.
+x-founded: '2014'
+x-headquarters: Singapore
+x-founders:
+- Cynthia Siantar
+- Daniel Chia
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Financial Services
+- FinTech
+- Market Data
+- Price Alerts
+- Notifications
+- Portfolio Management
+- Investing
+- Singapore
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +64,10 @@ maintainers:
 common:
 - type: Website
   url: https://call-levels.com
+- type: Crunchbase
+  url: https://www.crunchbase.com/organization/call-levels
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
