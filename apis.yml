@@ -58,12 +58,12 @@ created: '2026-07-17'
 modified: '2026-07-18'
 tags:
 - Company
-- Financial-Services
+- Financial Services
 - Fintech
 - Market Data
 - Price Alerts
 - Notification
-- Portfolio-Management
+- Portfolio Management
 - Investing
 - Singapore
 tags_raw:
@@ -76,6 +76,8 @@ tags_raw:
 - Portfolio Management
 - Investing
 - Singapore
+- Financial-Services
+- Portfolio-Management
 apis: []
 maintainers:
 - FN: Kin Lane
